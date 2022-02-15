@@ -1,3 +1,4 @@
+//navbar displays
 function openNav(){
    document.getElementById("mySidenav").style.height = "100%";
   }
@@ -5,7 +6,7 @@ function openNav(){
    document.getElementById("mySidenav").style.height = "0%";
 console.log("open nav")  
 }
-// fade
+// fade div
 var slideIndex = 0;
 showSlides();
 
@@ -26,7 +27,7 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 4 seconds
 }
 
-// --------------- clock
+// ---------------fuctional clock
 function showTime(){
    var date = new Date();
    var h = date.getHours();
@@ -53,6 +54,7 @@ s = (s<10)?"0"+s:s;
    setTimeout(showTime,1000);
    }
    showTime();
+
 // scientific calcutor
 function clr(){
 document.getElementById("result").value="";
@@ -66,7 +68,7 @@ function equate(){
    document.getElementById("result").value = y;
 }
 
-// form
+//validating form
 function myFunction() {
    var x = document.getElementById("frm1").method;
    document.getElementById("demo").innerHTML = x;
@@ -76,13 +78,6 @@ function Boolean(){
 console.log('boolean')
 }
 
-const btn = document.getElementsByClassName('btn1');
-const p = document.getElementsByClassName('p');
-
-btn.addEventListener('click',()=>{
-   p.style.color = 'red';
-   console.log('hello')
-})
 // Get the modal
 var modal = document.getElementById('id01');
 
